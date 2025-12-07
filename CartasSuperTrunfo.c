@@ -15,6 +15,8 @@ int populaçao, populaçao2;
 int turismo, turismo2;
 float area, pib, superpoder, superpoderemb,densidade, pibpp, densidadeINV, pibemb;
 float area2, pib2, superpoder2, superpoderemb2,densidade2, pibpp2, densidadeINV2, pibemb2;
+int resultado = 0; 
+
 
   // Área para entrada de dados
 
@@ -119,6 +121,15 @@ printf("Super Poder: %.2f bilhoes\n", superpoderemb2);
 
 // comparação das cartas A e B
 
+int ResulPopulaçao = 0, ResultArea = 0, ResultPIB = 0 , ResultTurismo = 0, ResultDensidade = 0, ResultPIBpp = 0, ResultSuper = 0;
+
+printf("COMPARAÇÃO DE CARTAS");
+printf("População:\n");
+    
+if (ResulPopulaçao == 1) 
+{printf("CARTA 01 vence!\n");} 
+else 
+{printf("CARTA 02 vence!\n");}
 
 
 return 0;
