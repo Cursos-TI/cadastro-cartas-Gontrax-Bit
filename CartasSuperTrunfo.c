@@ -19,6 +19,7 @@ int resultado = 0;
 
 
   // Área para entrada de dados
+  
 
   //carta 01
 
@@ -101,7 +102,7 @@ densidade2 = populaçao2 / area2;
 pibpp2 = pib2 / populaçao2;
 densidadeINV2 = 1 / densidade2;
 superpoder2 = populaçao2 + area2 + pib2 + turismo2 + pibpp2 + densidadeINV2;
-pibemb2 = pib / 1e9;
+pibemb2 = pib2 / 1e9;
 superpoderemb2 = superpoder2 / 1e9;
 
   // Área para exibição dos dados da carta B
@@ -115,21 +116,60 @@ printf("Area: %.2f km2\n", area);
 printf("PIB: %.2f bilhoes de reais\n", pibemb2);
 printf("Numero de pontos turisticos: %d\n", turismo2);
 printf("Densidade Populacional: %.2f hab/km2\n", densidade2);
-printf("PIB per Capita: %.2f\n reais", pibpp2);
+printf("PIB per Capita: %.2f reais\n", pibpp2);
 printf("Super Poder: %.2f bilhoes\n", superpoderemb2);
 
 
 // comparação das cartas A e B
 
-int ResulPopulaçao = 0, ResultArea = 0, ResultPIB = 0 , ResultTurismo = 0, ResultDensidade = 0, ResultPIBpp = 0, ResultSuper = 0;
+int ResulPopulaçao = populaçao > populaçao2, ResultArea = area > area2, ResultPIB = pibemb > pibemb2 , ResultTurismo = turismo > turismo2;
+int ResultDensidade = densidade < densidade2, ResultPIBpp = pibpp > pibpp2, ResultSuper = superpoderemb > superpoderemb2;
 
-printf("COMPARAÇÃO DE CARTAS");
-printf("População:\n");
-    
+printf("COMPARAÇÃO DE CARTAS\n");
+
+printf("População:\n");   
 if (ResulPopulaçao == 1) 
 {printf("CARTA 01 vence!\n");} 
 else 
 {printf("CARTA 02 vence!\n");}
+
+printf("Area:\n");   
+if (ResultArea == 1) 
+{printf("CARTA 01 vence!\n");} 
+else 
+{printf("CARTA 02 vence!\n");}
+
+printf("PIB:\n");    
+if (ResultPIB == 1) 
+{printf("CARTA 01 vence!\n");} 
+else 
+{printf("CARTA 02 vence!\n");}
+
+printf("Pontos Turisticos:\n");
+if (ResultTurismo == 1) 
+{printf("CARTA 01 vence!\n");} 
+else 
+{printf("CARTA 02 vence!\n");}
+
+printf("Densidade Populacional:\n");
+if (ResultDensidade == 1) 
+{printf("CARTA 01 vence!\n");} 
+else 
+{printf("CARTA 02 vence!\n");}
+
+printf("PIB per Capita:\n");
+if (ResultPIBpp == 1) 
+{printf("CARTA 01 vence!\n");} 
+else 
+{printf("CARTA 02 vence!\n");}
+
+printf("Super Poder:\n");
+if (ResultSuper == 1) 
+{printf("CARTA 01 vence!\n");} 
+else 
+{printf("CARTA 02 vence!\n");}
+
+
 
 
 return 0;
