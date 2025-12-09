@@ -170,8 +170,6 @@ else
 {printf("CARTA 02 vence!\n");}
 
 
-
-
 return 0;
 
 
