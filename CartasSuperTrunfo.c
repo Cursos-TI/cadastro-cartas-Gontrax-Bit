@@ -1,12 +1,10 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das cartas
-// Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
+// Desafio Super Trunfo
 
 int main() {
-  // Área para definição das variáveis para armazenar as propriedades das cidades
-  // os dados para carta B tem o 2 na frente
+// Área para definição das variáveis para armazenar as propriedades das cidades
+// os dados para carta B tem o 2 na frente
 
 
 char estado[30], cidade[30], codigo[30];
@@ -18,10 +16,10 @@ float area2, pib2, superpoder2, superpoderemb2,densidade2, pibpp2, densidadeINV2
 int resultado = 0; 
 
 
-  // Área para entrada de dados
+// Área para entrada de dados
   
 
-  //carta 01
+//carta 01
 
 printf("Insira os dados da CARTA 01\n");
 
@@ -46,6 +44,8 @@ scanf("%f", &pib);
 printf("Qual a quantidade de pontos turisticos: \n");
 scanf("%d", &turismo);
 
+//area para calculos dos dados
+
 densidade = populaçao / area;
 pibpp = pib / populaçao;
 densidadeINV = 1 / densidade;
@@ -54,9 +54,7 @@ pibemb = pib / 1e9;
 superpoderemb = superpoder / 1e9;
 
 
-
-
-  // Área para exibição dos dados da carta A
+// Área para exibição dos dados da carta A
 
 printf("CARTA 01\n");
 printf("Estado: %s\n", estado);
@@ -97,6 +95,7 @@ scanf("%f", &pib2);
 printf("Qual a quantidade de pontos turisticos: \n");
 scanf("%d", &turismo2);
 
+//area para calculos dos dados
 
 densidade2 = populaçao2 / area2;
 pibpp2 = pib2 / populaçao2;
@@ -105,7 +104,7 @@ superpoder2 = populaçao2 + area2 + pib2 + turismo2 + pibpp2 + densidadeINV2;
 pibemb2 = pib2 / 1e9;
 superpoderemb2 = superpoder2 / 1e9;
 
-  // Área para exibição dos dados da carta B
+// Área para exibição dos dados da carta B
 
 printf("CARTA 02\n");
 printf("Estado: %s\n", estado2);
@@ -129,45 +128,45 @@ printf("COMPARAÇÃO DE CARTAS\n");
 
 printf("População:\n");   
 if (ResulPopulaçao == 1) 
-{printf("CARTA 01 vence!\n");} 
+{printf("CARTA 01 VENCEU!\n");} 
 else 
-{printf("CARTA 02 vence!\n");}
+{printf("CARTA 02 VENCEU!\n");}
 
 printf("Area:\n");   
 if (ResultArea == 1) 
-{printf("CARTA 01 vence!\n");} 
+{printf("CARTA 01 VENCEU!\n");} 
 else 
-{printf("CARTA 02 vence!\n");}
+{printf("CARTA 02 VENCEU!\n");}
 
 printf("PIB:\n");    
 if (ResultPIB == 1) 
-{printf("CARTA 01 vence!\n");} 
+{printf("CARTA 01 VENCEU!\n");} 
 else 
-{printf("CARTA 02 vence!\n");}
+{printf("CARTA 02 VENCEU!\n");}
 
 printf("Pontos Turisticos:\n");
 if (ResultTurismo == 1) 
-{printf("CARTA 01 vence!\n");} 
+{printf("CARTA 01 VENCEU!\n");} 
 else 
-{printf("CARTA 02 vence!\n");}
+{printf("CARTA 02 VENCEU!\n");}
 
 printf("Densidade Populacional:\n");
 if (ResultDensidade == 1) 
-{printf("CARTA 01 vence!\n");} 
+{printf("CARTA 01 VENCEU!\n");} 
 else 
-{printf("CARTA 02 vence!\n");}
+{printf("CARTA 02 VENCEU!\n");}
 
 printf("PIB per Capita:\n");
 if (ResultPIBpp == 1) 
-{printf("CARTA 01 vence!\n");} 
+{printf("CARTA 01 VENCEU!\n");} 
 else 
-{printf("CARTA 02 vence!\n");}
+{printf("CARTA 02 VENCEU!\n");}
 
 printf("Super Poder:\n");
 if (ResultSuper == 1) 
-{printf("CARTA 01 vence!\n");} 
+{printf("CARTA 01 VENCEU!\n");} 
 else 
-{printf("CARTA 02 vence!\n");}
+{printf("CARTA 02 VENCEU!\n");}
 
 
 return 0;
