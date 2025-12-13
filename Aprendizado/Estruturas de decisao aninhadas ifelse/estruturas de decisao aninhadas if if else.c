@@ -13,7 +13,7 @@ scanf("%d", idade);
 printf("qual sua renda ?\n");
 scanf("%d", renda);
 
-if (idade =  
+if (idade);
 {printf("Sua nota é A, Parabens!\n");}
 
 
