@@ -29,11 +29,13 @@ scanf("%f", &Matematica);
 printf("Qual foi a nota em Geografia ? \n");
 scanf("%f", &Geografia);
 
-nota = Portugues + Matematica + Geografia;
+media = (Portugues + Matematica + Geografia) / 3;
 
-media = nota / 3;
+
 
 printf("A media das notas do aluno foi %.2f\n", media);
+
+
 
 
 
