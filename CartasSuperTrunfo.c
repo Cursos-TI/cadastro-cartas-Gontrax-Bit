@@ -111,7 +111,7 @@ printf("Estado: %s\n", estado2);
 printf("Codigo da carta: %s\n", codigo2);
 printf("Cidade: %s\n", cidade2);
 printf("Populacao: %d habitantes\n", populaçao2);
-printf("Area: %.2f km2\n", area);
+printf("Area: %.2f km2\n", area2);
 printf("PIB: %.2f bilhoes de reais\n", pibemb2);
 printf("Numero de pontos turisticos: %d\n", turismo2);
 printf("Densidade Populacional: %.2f hab/km2\n", densidade2);
