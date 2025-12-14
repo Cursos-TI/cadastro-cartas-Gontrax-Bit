@@ -304,7 +304,7 @@ break;//break case 02 comparacao
 case 3: //destinado a comparação de 2 atributos
 
 //switch atributos 1
-int atributos1, atributos2;
+int atributos1;
 int resultado1;
 
 printf("***QUAL O PRIMEIRO DADO DESEJA COMPARAR***\n");
@@ -321,77 +321,43 @@ switch (atributos1)
 {
 case 1:
     printf("Voce escolheu o atributo População:\n");   
-if (populaçao > populaçao2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (populaçao < populaçao2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+resultado1 = populaçao > populaçao2;
+
     break;
 
 case 2:
-    printf("Area:\n");   
-if (area > area2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (area < area2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo Area:\n");   
+resultado1 = area > area2 ? 1 : 0;
 
     break; 
 
 case 3:
-    printf("PIB:\n");    
-if (pibemb > pibemb2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (pibemb < pibemb2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo PIB:\n");    
+resultado1 = pibemb > pibemb2 ? 1 : 0;
 
     break;
 
 case 4:
-    printf("Pontos Turisticos:\n");
-if (turismo > turismo2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (turismo < turismo2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo Pontos Turisticos:\n");
+resultado1 = turismo > turismo2 ? 1 : 0;
 
     break;
 
 case 5:
-    printf("Densidade Populacional:\n");
-if (densidade < densidade2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (densidade > densidade2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo Densidade Populacional:\n");
+resultado1 = densidade < densidade2 ? 1 : 0;
 
     break;
 
 case 6:
-    printf("PIB per Capita:\n");
-if (pibpp > pibpp2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (pibpp < pibpp2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo PIB per Capita:\n");
+resultado1 = pibpp > pibpp2 ? 1 : 0;
 
     break;
 
 case 7:
-    printf("Super Poder:\n");
-if (superpoderemb > superpoderemb2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (superpoderemb < superpoderemb2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo Super Poder:\n");
+resultado1 = superpoderemb > superpoderemb2 ? 1 : 0;
 
     break;
 
@@ -401,7 +367,8 @@ default:
 
 }
 //switch atributos 2
-int atributos1, atributos2;
+int atributos2;
+int resultado2;
 
 printf("***QUAL O SEGUNDO DADO DESEJA COMPARAR***\n");
 printf("1.População\n");
@@ -413,81 +380,52 @@ printf("6.PIB per Capita\n");
 printf("7.Super Poder\n");
 scanf("%d", &atributos2);
 
-switch (atributos2)
+
+if (atributos1 == atributos2) //para nao selecionar o mesmo atributo
+{
+    printf("voce escolheu o mesmo atributo, escolha um diferente\n");
+}else{
+    switch (atributos2) //switch do atributo2 começa dentro desse else
 {
 case 1:
-    printf("População:\n");   
-if (populaçao > populaçao2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (populaçao < populaçao2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo População:\n");   
+resultado2 = populaçao > populaçao2;
+
     break;
 
 case 2:
-    printf("Area:\n");   
-if (area > area2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (area < area2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo Area:\n");   
+resultado2 = area > area2 ? 1 : 0;
 
     break; 
 
 case 3:
-    printf("PIB:\n");    
-if (pibemb > pibemb2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (pibemb < pibemb2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo PIB:\n");    
+resultado2 = pibemb > pibemb2 ? 1 : 0;
 
     break;
 
 case 4:
-    printf("Pontos Turisticos:\n");
-if (turismo > turismo2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (turismo < turismo2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo Pontos Turisticos:\n");
+resultado2 = turismo > turismo2 ? 1 : 0;
 
     break;
 
 case 5:
-    printf("Densidade Populacional:\n");
-if (densidade < densidade2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (densidade > densidade2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo Densidade Populacional:\n");
+resultado2 = densidade < densidade2 ? 1 : 0;
 
     break;
 
 case 6:
-    printf("PIB per Capita:\n");
-if (pibpp > pibpp2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (pibpp < pibpp2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo PIB per Capita:\n");
+resultado2 = pibpp > pibpp2 ? 1 : 0;
 
     break;
 
 case 7:
-    printf("Super Poder:\n");
-if (superpoderemb > superpoderemb2) 
-{printf("CARTA 01 - %s VENCEU!\n", estado);}
-else if (superpoderemb < superpoderemb2)
-{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
-else 
-{printf("EMPATE\n");}
+    printf("Voce escolheu o atributo Super Poder:\n");
+resultado2 = superpoderemb > superpoderemb2 ? 1 : 0;
 
     break;
 
@@ -495,9 +433,9 @@ default:
     printf("Opção invalida, selecione uma das 7 anteriores\n");
     break;
 
-
-
 }
+}
+
 
 
 
