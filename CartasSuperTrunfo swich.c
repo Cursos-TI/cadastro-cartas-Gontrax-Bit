@@ -436,6 +436,8 @@ default:
 }
 }
 
+printf("resultado1 = %d\n", resultado1);
+printf("resultado2 = %d\n", resultado2);
 
 
 
