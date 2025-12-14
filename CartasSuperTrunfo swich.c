@@ -145,58 +145,58 @@ printf("***COMPARAÇÃO AUTOMATICA DE CARTAS***\n");
 
 printf("População:\n");   
 if (populaçao > populaçao2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);} 
 else if (populaçao < populaçao2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
 
 printf("Area:\n");   
 if (area > area2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (area < area2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
 printf("PIB:\n");    
 if (pibemb > pibemb2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (pibemb < pibemb2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
 printf("Pontos Turisticos:\n");
 if (turismo > turismo2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (turismo < turismo2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
 printf("Densidade Populacional:\n");
 if (densidade < densidade2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (densidade > densidade2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
 printf("PIB per Capita:\n");
 if (pibpp > pibpp2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (pibpp < pibpp2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
 printf("Super Poder:\n");
 if (superpoderemb > superpoderemb2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (superpoderemb < superpoderemb2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
@@ -220,9 +220,9 @@ switch (selecao)
 case 1:
     printf("População:\n");   
 if (populaçao > populaçao2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (populaçao < populaçao2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
     break;
@@ -230,9 +230,9 @@ else
 case 2:
     printf("Area:\n");   
 if (area > area2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (area < area2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
@@ -241,9 +241,9 @@ else
 case 3:
     printf("PIB:\n");    
 if (pibemb > pibemb2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (pibemb < pibemb2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
@@ -252,9 +252,9 @@ else
 case 4:
     printf("Pontos Turisticos:\n");
 if (turismo > turismo2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (turismo < turismo2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
@@ -263,9 +263,9 @@ else
 case 5:
     printf("Densidade Populacional:\n");
 if (densidade < densidade2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (densidade > densidade2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
@@ -274,9 +274,9 @@ else
 case 6:
     printf("PIB per Capita:\n");
 if (pibpp > pibpp2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (pibpp < pibpp2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
@@ -285,9 +285,9 @@ else
 case 7:
     printf("Super Poder:\n");
 if (superpoderemb > superpoderemb2) 
-{printf("CARTA 01 VENCEU!\n");} 
+{printf("CARTA 01 - %s VENCEU!\n", estado);}
 else if (superpoderemb < superpoderemb2)
-{printf("CARTA 02 VENCEU!\n");}
+{printf("CARTA 02 - %s VENCEU!\n", estado2);} 
 else 
 {printf("EMPATE\n");}
 
