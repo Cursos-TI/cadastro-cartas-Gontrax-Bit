@@ -121,52 +121,64 @@ printf("Super Poder: %.2f bilhoes\n", superpoderemb2);
 
 // comparação das cartas A e B
 
-int ResulPopulaçao = populaçao > populaçao2, ResultArea = area > area2, ResultPIB = pibemb > pibemb2 , ResultTurismo = turismo > turismo2;
-int ResultDensidade = densidade < densidade2, ResultPIBpp = pibpp > pibpp2, ResultSuper = superpoderemb > superpoderemb2;
-
 printf("COMPARAÇÃO DE CARTAS\n");
 
 printf("População:\n");   
-if (ResulPopulaçao == 1) 
+if (populaçao > populaçao2) 
 {printf("CARTA 01 VENCEU!\n");} 
-else 
+else if (populaçao < populaçao2)
 {printf("CARTA 02 VENCEU!\n");}
+else 
+{printf("EMPATE\n");}
+
 
 printf("Area:\n");   
-if (ResultArea == 1) 
+if (area > area2) 
 {printf("CARTA 01 VENCEU!\n");} 
-else 
+else if (area < area2)
 {printf("CARTA 02 VENCEU!\n");}
+else 
+{printf("EMPATE\n");}
 
 printf("PIB:\n");    
-if (ResultPIB == 1) 
+if (pibemb > pibemb2) 
 {printf("CARTA 01 VENCEU!\n");} 
-else 
+else if (pibemb < pibemb2)
 {printf("CARTA 02 VENCEU!\n");}
+else 
+{printf("EMPATE\n");}
 
 printf("Pontos Turisticos:\n");
-if (ResultTurismo == 1) 
+if (turismo > turismo2) 
 {printf("CARTA 01 VENCEU!\n");} 
-else 
+else if (turismo < turismo2)
 {printf("CARTA 02 VENCEU!\n");}
+else 
+{printf("EMPATE\n");}
 
 printf("Densidade Populacional:\n");
-if (ResultDensidade == 1) 
+if (densidade < densidade2) 
 {printf("CARTA 01 VENCEU!\n");} 
-else 
+else if (densidade > densidade2)
 {printf("CARTA 02 VENCEU!\n");}
+else 
+{printf("EMPATE\n");}
 
 printf("PIB per Capita:\n");
-if (ResultPIBpp == 1) 
+if (pibpp > pibpp2) 
 {printf("CARTA 01 VENCEU!\n");} 
-else 
+else if (pibpp < pibpp2)
 {printf("CARTA 02 VENCEU!\n");}
+else 
+{printf("EMPATE\n");}
 
 printf("Super Poder:\n");
-if (ResultSuper == 1) 
+if (superpoderemb > superpoderemb2) 
 {printf("CARTA 01 VENCEU!\n");} 
-else 
+else if (superpoderemb < superpoderemb2)
 {printf("CARTA 02 VENCEU!\n");}
+else 
+{printf("EMPATE\n");}
 
 
 return 0;

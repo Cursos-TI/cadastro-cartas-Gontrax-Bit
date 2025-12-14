@@ -74,7 +74,7 @@ else if (computador == 2)
     else if (palpite == 3)
     {
         printf("Voce escolheu TESOURA\n");
-        printf("VOCE GANHOU, PARABENS");
+        printf("VOCE GANHOU, PARABENS\n");
     }
     
     
@@ -86,7 +86,7 @@ else if (computador == 3)
     if (palpite == 1)
     {
         printf("Voce escolheu PEDRA\n");
-        printf("VOCE GANHOU, PARABENS");
+        printf("VOCE GANHOU, PARABENS\n");
     }
     else if (palpite == 2)
     {
