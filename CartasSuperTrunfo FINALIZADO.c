@@ -35,7 +35,7 @@ switch (jogo)
 case 1:
     printf("Insira os dados da CARTA 01\n");
 
-printf("Qual sera o estado: \n");
+printf("Insira a SIGLA do estado: \n");
 scanf("%s", &estado);
 
 printf("Qual sera o codigo: \n");
@@ -67,7 +67,7 @@ superpoderemb = superpoder / 1e9;
 
 printf("Insira os dados da CARTA 02\n");
 
-printf("Qual sera o estado: \n");
+printf("Insira a SIGLA do estado: \n");
 scanf("%s", &estado2);
 
 printf("Qual sera o codigo: \n");
@@ -100,9 +100,9 @@ superpoderemb2 = superpoder2 / 1e9;
 // Área para exibição dos dados da carta A
 
 printf("CARTA 01\n");
-printf("Estado: %s\n", estado);
+//printf("Estado: %s\n", estado);
 printf("Codigo da carta: %s\n", codigo);
-printf("Cidade: %s\n", cidade);
+printf("Cidade: %s%s\n", cidade, estado);
 printf("Populacao: %d habitantes\n", populaçao);
 printf("Area: %6.2f km2\n", area);
 printf("PIB: %.2f bilhoes de reais\n", pibemb);
@@ -116,9 +116,9 @@ printf("Super Poder: %.2f bilhoes\n", superpoderemb);
 // Área para exibição dos dados da carta B
 
 printf("CARTA 02\n");
-printf("Estado: %s\n", estado2);
+//printf("Estado: %s\n", estado2);
 printf("Codigo da carta: %s\n", codigo2);
-printf("Cidade: %s\n", cidade2);
+printf("Cidade: %s%s\n", cidade2, estado2);
 printf("Populacao: %d habitantes\n", populaçao2);
 printf("Area: %.2f km2\n", area2);
 printf("PIB: %.2f bilhoes de reais\n", pibemb2);
@@ -435,9 +435,19 @@ default:
 
 }
 }
+int resultadofinal1, resultadofinal2;
 
-printf("resultado1 = %d\n", resultado1);
-printf("resultado2 = %d\n", resultado2);
+
+if (resultado1 == 1 && resultado2 == 1)
+{
+    printf("A CARTA 01 da cidade %s-%s, VENCEU!\n", cidade, estado);
+}else if (resultado1 == 0 && resultado2 == 0)
+{
+    printf("A CARTA 02 da cidade %s-%s, VENCEU!\n", cidade2, estado2);
+}else if ((resultado1 == 0 && resultado2 == 1) || (resultado1 == 1 && resultado2 == 0))
+{
+    printf("As CARTAS EMPATARAM!\n");
+}
 
 
 
@@ -473,6 +483,7 @@ break; // break case 02 inicio
 case 3:
 
 printf("***REGRAS***\n");
+
 
 
 break; // break case 03 inicio
